@@ -1,0 +1,52 @@
+<!doctype html>
+<!--
+ This page is shown when the extension button is clicked, because the
+ "browser_action" field in manifest.json contains the "default_popup" key with
+ value "popup.html".
+ -->
+<html>
+  <head>
+    <title>Mark's Getting Started Extension Popup</title>
+    <link rel="stylesheet" type="text/css" href="css/Aimara.css">
+    <style type="text/css">
+      body {
+        margin: 10px;
+        white-space: nowrap;
+      }
+
+      h1 {
+        font-size: 15px;
+      }
+
+      #container {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      #active {
+        font-weight: bold;
+      }
+    </style>
+
+    <!--
+      - JavaScript and HTML must be in separate files: see our Content Security
+      - Policy documentation[1] for details and explanation.
+      -
+      - [1]: https://developer.chrome.com/extensions/contentSecurityPolicy
+    -->
+    <script src="tabinspector.js"></script>
+    <script src="aimara.js"></script>
+  </head>
+
+  <body>
+    <h1>Tab Inspector</h1>
+<!--
+    <h4>Open Tabs:</h4>
+    <div id="container">
+      <ul id="tabs"></ul>
+    </div>
+  -->
+    <div id="tab-tree"></div>
+  </body>
+</html>
