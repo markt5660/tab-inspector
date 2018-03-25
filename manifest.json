@@ -6,11 +6,12 @@
     "version": "1.0",
   
     "browser_action": {
-      "default_icon": "icon.png",
+      "default_icon": "icon24.png",
       "default_popup": "tabs.html"
     },
 
     "permissions": [
+      "bookmarks",
       "tabs",
       "storage"
     ],
